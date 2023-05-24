@@ -11,7 +11,7 @@ import {
   OneToMany,
 } from 'typeorm';
 
-@Entity()
+@Entity('roadmap')
 export class RoadmapEntity {
   @PrimaryGeneratedColumn({ name: 'roadmap_id' })
   id: number;

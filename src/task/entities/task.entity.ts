@@ -11,7 +11,7 @@ import {
   OneToMany,
 } from 'typeorm';
 
-@Entity()
+@Entity('task')
 export class TaskEntity {
   @PrimaryGeneratedColumn({ name: 'task_id' })
   id: number;

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 // import { JwtService } from '@nestjs/jwt';
 // import { PassportModule } from '@nestjs/passport';
 import { Module } from '@nestjs/common';
@@ -13,6 +14,7 @@ import { UserEntity } from './users/entities/user.entity';
 import { UserModule } from './users/user.module';
 import { CommentEntity } from './comment/entities/comment.entity';
 
+require('dotenv').config();
 @Module({
   imports: [
     TypeOrmModule.forRoot({

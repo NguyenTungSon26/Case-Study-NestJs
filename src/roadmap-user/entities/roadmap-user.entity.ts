@@ -10,7 +10,7 @@ import {
 } from 'typeorm';
 import { RoadmapEntity } from 'src/roadmap/entities/roadmap.entity';
 
-@Entity()
+@Entity('roadmap_user')
 export class RoadmapUserEntity {
   @PrimaryGeneratedColumn({ name: 'roadmap_user_id' })
   userId: number;
